@@ -1,0 +1,93 @@
+/* Root div styling targeting the main container */
+#root > div, 
+body > div {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  padding: 3rem 2.5rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+/* Targeting the specific <h1 name="title"> element */
+h1[name="title"] {
+  margin: 0;
+  font-size: 2.8rem;
+  font-weight: 900;
+  background: linear-gradient(135deg, #a855f7 0%, #3b82f6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.3));
+  line-height: 1.1;
+}
+
+/* Targeting the <h1 name="players"> element */
+h1[name="players"] {
+  margin: 1rem 0 0 0;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #94a3b8;
+  font-weight: 500;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 0.8rem 1.5rem;
+  border-radius: 12px 12px 0 0;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: none;
+}
+
+/* Targeting the <p name="scores"> element */
+p[name="scores"] {
+  margin: 0;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #e2e8f0;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  padding: 1rem 1.5rem 2rem 1.5rem;
+  border-radius: 0 0 12px 12px;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-top: none;
+  letter-spacing: 5px;
+}
+
+/* Creating a container for the buttons implicitly */
+button {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 1rem;
+  font-size: 3rem;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  margin: 0.5rem;
+  display: inline-flex;
+  min-width: 90px;
+  height: 90px;
+  align-items: center;
+  justify-content: center;
+}
+
+button:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+button:active {
+  transform: translateY(2px) scale(0.95);
+}
